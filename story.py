@@ -21,5 +21,12 @@ def know_each_oder():
 
 
 
-first_meeting()
-know_each_oder()
+
+def i_tried(did:bool) -> str:
+    if did == True:
+        print("I did")
+    else:
+        return("really?")
+    
+i_tried(True)
+      

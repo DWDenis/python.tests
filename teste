@@ -1,0 +1,29 @@
+Algoritmo "Dosagem_remedio"
+
+
+//ambas dosagens são em mg com base o peso em kg do paciete
+
+//Definindo as variaveis
+    Var
+      peso_paciente_kg : real
+      dosagem_recomendada : inteiro
+      dosagem_max : inteiro
+      dosagem_ex_bula : inteiro
+
+
+Inicio
+  escreva("Qual o peso atual do paciente? ")
+  leia(peso_paciente_kg)
+  escreva("Qual o valor exemplo descrito na bula? ")
+  leia(dosagem_ex_bula)
+  escreva("Qual a dosagem max segura? ")
+  leia(dosagem_max)
+
+  dosagem_recomendada <- (dosagem_ex_bula * peso_paciente_kg)
+  
+  se (dosagem_recomendada < dosagem_max) entao
+      escreva("DOSE SEGURA")
+  senao
+      escreva("DOSE NÃO SEGURA")
+  fimse
+
